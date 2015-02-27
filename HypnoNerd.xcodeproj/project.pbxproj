@@ -16,6 +16,8 @@
 		CF9F624A1A9FEBD20048054B /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F62491A9FEBD20048054B /* HypnoNerdTests.m */; };
 		CF9F62551A9FEC850048054B /* OGMHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F62541A9FEC850048054B /* OGMHypnosisView.m */; };
 		CF9F62581A9FECF10048054B /* OGMHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F62571A9FECF10048054B /* OGMHypnosisViewController.m */; };
+		CF9F625B1A9FF6C90048054B /* OGMReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F625A1A9FF6C90048054B /* OGMReminderViewController.m */; };
+		CF9F625D1A9FF7F00048054B /* OGMReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9F625C1A9FF7EF0048054B /* OGMReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		CF9F62541A9FEC850048054B /* OGMHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMHypnosisView.m; sourceTree = "<group>"; };
 		CF9F62561A9FECF10048054B /* OGMHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMHypnosisViewController.h; sourceTree = "<group>"; };
 		CF9F62571A9FECF10048054B /* OGMHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMHypnosisViewController.m; sourceTree = "<group>"; };
+		CF9F62591A9FF6C90048054B /* OGMReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMReminderViewController.h; sourceTree = "<group>"; };
+		CF9F625A1A9FF6C90048054B /* OGMReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMReminderViewController.m; sourceTree = "<group>"; };
+		CF9F625C1A9FF7EF0048054B /* OGMReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGMReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 			children = (
 				CF9F62311A9FEBD20048054B /* OGMAppDelegate.h */,
 				CF9F62321A9FEBD20048054B /* OGMAppDelegate.m */,
+				CF9F62591A9FF6C90048054B /* OGMReminderViewController.h */,
+				CF9F625A1A9FF6C90048054B /* OGMReminderViewController.m */,
+				CF9F625C1A9FF7EF0048054B /* OGMReminderViewController.xib */,
 				CF9F62341A9FEBD20048054B /* OGMViewController.h */,
 				CF9F62351A9FEBD20048054B /* OGMViewController.m */,
 				CF9F62561A9FECF10048054B /* OGMHypnosisViewController.h */,
@@ -211,6 +219,7 @@
 			files = (
 				CF9F62391A9FEBD20048054B /* Main.storyboard in Resources */,
 				CF9F623E1A9FEBD20048054B /* LaunchScreen.xib in Resources */,
+				CF9F625D1A9FF7F00048054B /* OGMReminderViewController.xib in Resources */,
 				CF9F623B1A9FEBD20048054B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +242,7 @@
 				CF9F62331A9FEBD20048054B /* OGMAppDelegate.m in Sources */,
 				CF9F62301A9FEBD20048054B /* main.m in Sources */,
 				CF9F62551A9FEC850048054B /* OGMHypnosisView.m in Sources */,
+				CF9F625B1A9FF6C90048054B /* OGMReminderViewController.m in Sources */,
 				CF9F62581A9FECF10048054B /* OGMHypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
