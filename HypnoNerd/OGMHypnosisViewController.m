@@ -20,4 +20,22 @@
     self.view = backgroundView;
 }
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self){
+        // Setting the tab bar items title
+        self.tabBarItem.title = @"Hypnotize";
+        
+        // Creating a UIImage from a file
+        // This will use Hypno@2x.png on retina display devices
+        UIImage *i = [UIImage imageNamed:@"Hypno.png"];
+        
+        // Putting the image on the tab bar item
+        self.tabBarItem.image = i;
+    }
+    
+    return self;
+}
+
 @end

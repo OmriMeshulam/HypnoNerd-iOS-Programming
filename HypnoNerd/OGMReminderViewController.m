@@ -32,5 +32,24 @@
     NSLog(@"Setting a reminder for %@", date);
 }
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self){
+        // Getting the tab bar item
+        UITabBarItem *tbi = self.tabBarItem;
+    
+        // Giving it a lable
+        tbi.title = @"Reminder";
+        
+        // Giving it an image
+        UIImage *i = [UIImage imageNamed:@"Time.png"];
+        tbi.image = i;
+    }
+    
+    return self;
+}
+
 
 @end
