@@ -30,6 +30,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+}
+
 - (IBAction)addReminder:(id)sender
 {
     NSDate *date = self.datePicker.date;
