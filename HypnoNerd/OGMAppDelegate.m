@@ -23,11 +23,7 @@
     
     OGMHypnosisViewController *hvc = [[OGMHypnosisViewController alloc] init];
     
-    // This will get a pointer to an object that represents the app bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
-    // Looking in the appBundle for the file OGMReminderViewController.xib
-    OGMReminderViewController *rvc = [[OGMReminderViewController alloc] initWithNibName:@"OGMReminderViewController" bundle:appBundle];
+    OGMReminderViewController *rvc = [[OGMReminderViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[hvc, rvc];

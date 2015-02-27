@@ -16,9 +16,13 @@
 
 @implementation OGMReminderViewController
 
-- (void)viewDidLoad {
+// Overriding to show a message
+- (void) viewDidLoad
+{
+    // Always call the super implementation of viewDidLoad
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSLog(@"OGMReminderViewController loaded its view.");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,6 +34,18 @@
 {
     NSDate *date = self.datePicker.date;
     NSLog(@"Setting a reminder for %@", date);
+    
+    UILocalNotification *note = [[UILocalNotification alloc] init];
+    note.alertBody = @"Hypnotize me!";
+    note.fireDate = date;
+    
+    // asks if needed for user permission
+    [[UIApplication sharedApplication] registerUserNotificationSettings:
+     [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert)
+                                       categories:nil]];
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:note];
+
 }
 
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

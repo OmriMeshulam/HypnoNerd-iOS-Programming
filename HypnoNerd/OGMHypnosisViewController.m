@@ -38,4 +38,13 @@
     return self;
 }
 
+// Overriding to show a message
+- (void) viewDidLoad
+{
+    // Always call the super implementation of viewDidLoad
+    [super viewDidLoad];
+    
+    NSLog(@"OGMHypnosisViewController loaded its view.");
+}
+
 @end
