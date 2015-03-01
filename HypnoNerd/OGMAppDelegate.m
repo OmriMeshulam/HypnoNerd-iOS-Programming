@@ -9,6 +9,7 @@
 #import "OGMAppDelegate.h"
 #import "OGMHypnosisViewController.h"
 #import "OGMReminderViewController.h"
+#import "OGMQuizViewController.h"
 
 @interface OGMAppDelegate ()
 
@@ -16,7 +17,7 @@
 
 @implementation OGMAppDelegate
 
-
+// instantiating and setting an applications root view controller
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -25,8 +26,10 @@
     
     OGMReminderViewController *rvc = [[OGMReminderViewController alloc] init];
     
+    OGMQuizViewController *qvc = [[OGMQuizViewController alloc] init];
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, rvc];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
 
     self.window.rootViewController = tabBarController;
     

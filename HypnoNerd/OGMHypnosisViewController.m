@@ -11,6 +11,7 @@
 
 @implementation OGMHypnosisViewController
 
+// overriding/creating a view controllers view programmatically
 - (void) loadView
 {
     // Creating a view

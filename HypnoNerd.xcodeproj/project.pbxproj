@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF93DCAC1AA38C6B00D0D504 /* OGMQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93DCAA1AA38C6B00D0D504 /* OGMQuizViewController.m */; };
+		CF93DCAD1AA38C6B00D0D504 /* OGMQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF93DCAB1AA38C6B00D0D504 /* OGMQuizViewController.xib */; };
 		CF9F62301A9FEBD20048054B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F622F1A9FEBD20048054B /* main.m */; };
 		CF9F62331A9FEBD20048054B /* OGMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F62321A9FEBD20048054B /* OGMAppDelegate.m */; };
 		CF9F62361A9FEBD20048054B /* OGMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9F62351A9FEBD20048054B /* OGMViewController.m */; };
@@ -31,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF93DCA91AA38C6B00D0D504 /* OGMQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGMQuizViewController.h; sourceTree = "<group>"; };
+		CF93DCAA1AA38C6B00D0D504 /* OGMQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGMQuizViewController.m; sourceTree = "<group>"; };
+		CF93DCAB1AA38C6B00D0D504 /* OGMQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OGMQuizViewController.xib; sourceTree = "<group>"; };
 		CF9F622A1A9FEBD20048054B /* HypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9F622E1A9FEBD20048054B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9F622F1A9FEBD20048054B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +99,9 @@
 			children = (
 				CF9F62311A9FEBD20048054B /* OGMAppDelegate.h */,
 				CF9F62321A9FEBD20048054B /* OGMAppDelegate.m */,
+				CF93DCA91AA38C6B00D0D504 /* OGMQuizViewController.h */,
+				CF93DCAA1AA38C6B00D0D504 /* OGMQuizViewController.m */,
+				CF93DCAB1AA38C6B00D0D504 /* OGMQuizViewController.xib */,
 				CF9F62591A9FF6C90048054B /* OGMReminderViewController.h */,
 				CF9F625A1A9FF6C90048054B /* OGMReminderViewController.m */,
 				CF9F625C1A9FF7EF0048054B /* OGMReminderViewController.xib */,
@@ -217,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93DCAD1AA38C6B00D0D504 /* OGMQuizViewController.xib in Resources */,
 				CF9F62391A9FEBD20048054B /* Main.storyboard in Resources */,
 				CF9F623E1A9FEBD20048054B /* LaunchScreen.xib in Resources */,
 				CF9F625D1A9FF7F00048054B /* OGMReminderViewController.xib in Resources */,
@@ -241,6 +250,7 @@
 				CF9F62361A9FEBD20048054B /* OGMViewController.m in Sources */,
 				CF9F62331A9FEBD20048054B /* OGMAppDelegate.m in Sources */,
 				CF9F62301A9FEBD20048054B /* main.m in Sources */,
+				CF93DCAC1AA38C6B00D0D504 /* OGMQuizViewController.m in Sources */,
 				CF9F62551A9FEC850048054B /* OGMHypnosisView.m in Sources */,
 				CF9F625B1A9FF6C90048054B /* OGMReminderViewController.m in Sources */,
 				CF9F62581A9FECF10048054B /* OGMHypnosisViewController.m in Sources */,
