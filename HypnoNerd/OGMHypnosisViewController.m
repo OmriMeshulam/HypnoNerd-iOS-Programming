@@ -9,13 +9,31 @@
 #import "OGMHypnosisViewController.h"
 #import "OGMHypnosisView.h"
 
+@interface OGMHypnosisViewController() <UITextFieldDelegate> // Conforming to UITextFieldDelegate protocol
+@end
+
 @implementation OGMHypnosisViewController
 
 // overriding/creating a view controllers view programmatically
 - (void) loadView
 {
+    CGRect frame =  [UIScreen mainScreen].bounds;
+    
     // Creating a view
     OGMHypnosisView *backgroundView = [[OGMHypnosisView alloc] init];
+    
+    CGRect textFieldRect = CGRectMake(65, 70, 240, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
+    
+    // Setting the border style on the text field will allow us to see it more easily
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.placeholder = @"Hypnotize me";
+    textField.returnKeyType = UIReturnKeyDone;
+    
+    // updating loadView to set the delegate property of the UITextField to point at HypnosisViewController
+    textField.delegate = self;
+    
+    [backgroundView addSubview:textField];
     
     // Setting it as *the* view of the view controller
     self.view = backgroundView;
@@ -46,6 +64,48 @@
     [super viewDidLoad];
     
     NSLog(@"OGMHypnosisViewController loaded its view.");
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self drawHypnoticMessage:textField.text];
+    
+    textField.text = @"";
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+- (void)drawHypnoticMessage:(NSString *) message
+{
+    for (int i = 0; i < 20; i++)
+    {
+        UILabel *messageLabel = [[UILabel alloc] init];
+        
+        // Configure the label's color and text
+        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.textColor = [UIColor whiteColor];
+        messageLabel.text = message;
+        
+        // This method resizes the label which will be relative to the text it is displaying
+        [messageLabel sizeToFit];
+        
+        // Getting a random x value that fits within the hypnosis view's width
+        int width = (int)((self.view.bounds.size.width) - (messageLabel.bounds.size.width));
+        int x = arc4random() % width;
+        
+        // Getting a random y value that fits within the hypnosis view's height
+        int height = (int)((self.view.bounds.size.height) - (messageLabel.bounds.size.height));
+        int y = arc4random() % height;
+        
+        // Updating the label's frame
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x, y);
+        messageLabel.frame = frame;
+        
+        // adding the label to the hierarchy
+        [self.view addSubview:messageLabel];
+    }
 }
 
 @end
