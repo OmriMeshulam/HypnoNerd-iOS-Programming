@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7E08D24-C7BB-45EC-A465-12A965968816</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HypnoNerd</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8D57139C9FC7A78D3053A156C89B1C22F2DEF44C</key>
+		<string>https://github.com/OmriMeshulam/HypnoNerd-iOS-Programming.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HypnoNerd/HypnoNerd.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8D57139C9FC7A78D3053A156C89B1C22F2DEF44C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OmriMeshulam/HypnoNerd-iOS-Programming.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8D57139C9FC7A78D3053A156C89B1C22F2DEF44C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8D57139C9FC7A78D3053A156C89B1C22F2DEF44C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HypnoNerd-iOS-Programming</string>
+		</dict>
+	</array>
+</dict>
+</plist>
