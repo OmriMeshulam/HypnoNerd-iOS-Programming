@@ -10,6 +10,9 @@
 #import "OGMHypnosisView.h"
 
 @interface OGMHypnosisViewController() <UITextFieldDelegate> // Conforming to UITextFieldDelegate protocol
+
+@property (nonatomic, weak) UITextField *textField;
+
 @end
 
 @implementation OGMHypnosisViewController
@@ -17,8 +20,6 @@
 // overriding/creating a view controllers view programmatically
 - (void) loadView
 {
-    CGRect frame =  [UIScreen mainScreen].bounds;
-    
     // Creating a view
     OGMHypnosisView *backgroundView = [[OGMHypnosisView alloc] init];
     
@@ -34,6 +35,8 @@
     textField.delegate = self;
     
     [backgroundView addSubview:textField];
+    
+    self.textField = textField;
     
     // Setting it as *the* view of the view controller
     self.view = backgroundView;
@@ -134,7 +137,9 @@
                                                                         int y = arc4random() % height;
                                                                         messageLabel.center = CGPointMake(x, y);
                                                                     }];
-                                  }completion:NULL];
+                                  }completion:^(BOOL finished){
+                                      NSLog(@"Animation finished");
+                                  }];
         
         
         
@@ -149,6 +154,22 @@
         motionEffect.maximumRelativeValue = @(25);
         [messageLabel addMotionEffect:motionEffect];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [UIView animateWithDuration:2.0
+                          delay:0.0
+         usingSpringWithDamping:0.25
+          initialSpringVelocity:0.0
+                        options:0
+                     animations:^{
+                         CGRect frame = CGRectMake(40, 70, 240, 30);
+                         self.textField.frame = frame;
+                     }
+                     completion:NULL];
 }
 
 @end
